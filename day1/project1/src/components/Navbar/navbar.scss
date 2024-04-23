@@ -1,0 +1,68 @@
+/* Navbar.scss */
+.navbar,
+.navbar * {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-title,
+.navbar-action {
+  flex: 1;
+  display: flex;
+  justify-content: center; // Center content for title and action for a balanced look
+}
+
+.navbar-search {
+  flex: 2; // Allows the search bar to take more space
+  input {
+    width: 100%; // Full width to utilize the space
+    padding: 8px 16px; // Comfortable padding
+    border-radius: 20px; // Rounded edges for a modern look
+    border: none; // Remove default border
+    outline: none; // Remove focus outline to customize
+    transition: all 0.3s ease; // Smooth transition for focus state
+    &:focus {
+      background-color: #fff; // Lighter background on focus
+      color: #333; // Darker text for contrast
+    }
+    &::placeholder {
+      color: #aaa; // Light color for placeholder text
+    }
+  }
+}
+
+.navbar-action,
+.home-link {
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  &:hover {
+    color: #ffd700; // Gold color on hover for a vibrant effect
+  }
+}
+
+.home-link {
+  background-color: #007bff; // Consistent with search focus state
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px; // Rounded corners to match the search input
+  transition: background-color 0.3s ease; // Smooth background transition on hover
+  &:hover {
+    background-color: darken(#007bff, 10%); // Slightly darker on hover
+  }
+}

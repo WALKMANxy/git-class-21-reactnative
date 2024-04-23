@@ -1,0 +1,39 @@
+.episodes-container {
+  padding-top: 110px; /* Adjust based on your fixed navbar and pagination controls */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+}
+
+.episode-item {
+  width: 250px; /* Adjust based on layout */
+  margin: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.episode-info {
+  text-align: center;
+  padding: 15px;
+}
+
+.episode-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.episode-details p {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  color: #000000;
+}

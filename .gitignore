@@ -1,0 +1,56 @@
+### react ###
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
+
+### ReactNative ###
+# React Native Stack Base
+
+.expo
+__generated__
+
+### ReactNative.Buck Stack ###
+buck-out/
+.buckconfig.local
+.buckd/
+.buckversion
+.fakebuckversion
+
+### ReactNative.Android Stack ###
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+
+# Android Studio generated files and folders
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+output.json
+
+# IntelliJ
+*.iml
+.idea/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Keystore files
+*.jks
+*.keystore

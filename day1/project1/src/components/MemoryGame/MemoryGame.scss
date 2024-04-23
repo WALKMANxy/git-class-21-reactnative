@@ -1,0 +1,130 @@
+.memory-game {
+  // Styles for the game's main container
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; // Align content to the top
+  padding-top: 100px; // Adjust for the fixed navbar
+  gap: 10px;
+  min-height: calc(100vh - 100px); // Subtract the navbar height from the viewport height
+  text-align: center; // Center text for all child elements
+}
+
+.cards-container {
+  // This container will handle the layout of the cards
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    word-wrap: break-word;
+    max-width: 1000px;
+}
+
+@media (max-width: 768px) { // Media query for smartphones
+  .card {
+    width: 50px; // Smaller width for small screens
+    margin: 10px;
+    padding: 10px;
+  }
+  
+
+}
+
+.card {
+  aspect-ratio: 4 / 5; // Cards are square
+  background-color: #eee;
+  border: 1px solid #ddd;
+  cursor: pointer;
+ 
+  transition: transform 0.1s, visibility 0s linear 0.3s; /* Adjust based on your animation duration */
+  transform-style: preserve-3d;
+
+  width: 140px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  
+  &:hover {
+    // Optional: Add hover effect
+    transform: scale(1.05);
+
+    display: flex;
+    justify-content: center;
+    ;
+  }
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+    transition: transform 0.1s, visibility 0s linear 0.05s;
+
+}
+
+.card img, .card .card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px; // Optional: if you want rounded corners
+  transition: visibility 0s linear 0.3s;
+
+}
+
+.card img {
+  object-fit: cover;
+}
+
+
+
+.card-back {
+  background-color: #a0d1af; // Blue background
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .logo-back img {
+    max-width: 100%; // Ensure the image does not exceed the container width
+    max-height: 100%; // Ensure the image does not exceed the container height
+    object-fit: contain; // Maintain the aspect ratio of the logo
+    
+  }
+}
+
+
+.card .card-front {
+  flex-direction: column-reverse;
+
+  .logo-front {
+    bottom: 0
+  }
+
+}
+.start-button-container  {
+  // Styling for the play button and message
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+}
+
+.win-message {
+  // Styling for the win message and try again button
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+}

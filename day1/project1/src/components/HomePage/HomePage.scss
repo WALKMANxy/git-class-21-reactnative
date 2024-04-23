@@ -1,0 +1,55 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  text-align: center;
+
+  .logo {
+    max-width: 80%; // Adjust based on your logo size
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+    font-weight: bold;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem; // Space between each link/button
+
+      li {
+        width: 100%; // Full width buttons
+        max-width: 320px; // Max button width for larger screens
+
+        a {
+          display: block;
+          background-color: #6200ea; // A vibrant, modern color
+          color: #ffffff;
+          padding: 0.75rem 1.5rem;
+          border: none;
+          border-radius: 5px; // Slightly rounded corners for a modern look
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: bold;
+          transition: background-color 0.3s, transform 0.2s;
+
+          &:hover,
+          &:focus {
+            background-color: #3700b3; // Darker shade for interaction
+            transform: translateY(-3px); // Lift effect
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); // Subtle shadow for depth
+          }
+        }
+      }
+    }
+  }
+}

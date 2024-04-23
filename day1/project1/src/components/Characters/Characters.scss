@@ -1,0 +1,50 @@
+.characters-container {
+  padding-top: 110px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+}
+
+.character-item {
+  width: 250px; /* Adjust as needed */
+  margin: 20px; /* Increase margin for more spacing */
+  background-color: #fff; /* Add background color */
+  border: 1px solid #ddd; /* Add border */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+.character-item img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px; /* Rounded corners for top-left and top-right */
+  border-top-right-radius: 5px;
+}
+
+.character-info {
+  text-align: center;
+  padding: 15px;
+}
+
+.character-name {
+  font-size: 1.2rem; /* Increase font size for name */
+  font-weight: bold; /* Make name bold */
+}
+
+.character-details p {
+  font-size: 0.9rem; /* Adjust font size */
+  margin-bottom: 5px; /* Add space between details */
+}
+
+.label {
+  font-weight: bold; /* Make label bold */
+}
+
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  color: #000000;
+}
