@@ -5,8 +5,27 @@ import {
   ActionSheetProvider,
   useActionSheet,
 } from "@expo/react-native-action-sheet";
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
+import AppNavigator from './navigation';
 
-export default function App() {
+
+
+
+
+const App = () => {
+  return (
+    <Provider store={store}>
+      <AppNavigator />
+    </Provider>
+  );
+};
+
+export default App;
+
+
+
+/* export default function App() {
   return (
     <ActionSheetProvider>
       <View style={styles.container}>
@@ -60,4 +79,4 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignSelf: "center",
   },
-});
+}); */
